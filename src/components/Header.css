@@ -1,0 +1,10 @@
+.container--desktop-menu{
+    display: none;
+}
+.mobile-menu--nav-bar{
+    padding: 1rem;
+    width: 100%;
+    background-color: rgb(65, 42, 72);
+
+    color: #fff;
+}

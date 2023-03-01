@@ -1,10 +1,248 @@
 .container--desktop-menu{
+    /* positioning, layout*/
     display: none;
 }
-.mobile-menu--nav-bar{
-    padding: 1rem;
-    width: 100%;
-    background-color: rgb(65, 42, 72);
 
+.container--mobile-menu{
+    height: 100%;
+    position: relative;
+    
+}
+
+.mobile--nav-bar{
+    /* positioning, layout*/
+    position: absolute;
+    z-index: 100;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    /* typography, colors */
+    background-color: #181433;
     color: #fff;
+}
+
+.mobile--nav-bar > h1{
+    /* typography */
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.mobile--nav-links{
+    /* postioning, layout */
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -1800px;
+    /* typography, colors */
+    background-color: #181433;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    list-style: none;
+
+    /* transition */
+    transition: all 1s ease-in-out;
+}
+
+.nav-link{
+    /* postioning, layout */
+    display: block;
+    margin-bottom: 1em;
+
+    /* typography, colors */
+    font-size: 1.15em;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover{
+    color: #907c33;
+}
+
+.mobile--nav-links > .button--white{
+    margin-top: 5em;
+}
+
+.active{
+    top: 100%;
+}
+
+.container--header-img{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background: url('../pics/lawyers.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+    color: #fff;
+}
+
+.header-img--caption{
+    
+    font-family: 'EB Garamond', serif;
+}
+
+.header-img--sub-caption{
+    font-size: 0.75em;
+}
+
+
+
+
+
+@media  screen and (min-width: 768px) and (max-width: 1023px){
+
+    .container--header{
+        height: 100vh;;
+    }
+
+    .container--mobile-menu{
+        /* positioning, layout */
+        display: none;
+    }
+
+    .container--desktop-menu{
+        /* positioning, layout */
+        display: block;
+        width: 100%;
+
+        /* typography */
+        background-color: #181433;
+    }
+
+    .container--desktop-menu > div{
+        /* positioning, layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 4em;
+
+        /* typography */
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    .container--nav-links{
+        /* positioning, layout */
+        display: flex;
+        align-items: center;
+        padding: 2em;
+        background-color: #181433;
+        background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+
+        /* typography */
+        list-style: none;
+    }
+
+    .nav-link{
+        /* positioning, layout */
+        margin: 0 1em;
+    }
+    
+    .img--header{
+        z-index: -10;
+        margin-top: -1em;
+        filter: brightness(0.8);
+    }
+
+    .header-img--caption{
+        font-size: 3em;
+    }
+    
+    .header-img--sub-caption{
+        font-size: 1em;
+    }
+    
+}
+
+@media  screen and (min-width: 1024px){
+
+    .container--header{
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    .container--mobile-menu{
+        /* positioning, layout */
+        display: none;
+    }
+
+    .container--desktop-menu{
+        /* positioning, layout */
+        display: block;
+        width: 100%;
+
+        /* typography */
+        background-color: #181433;
+    }
+
+    .container--desktop-menu > div{
+        /* positioning, layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 10%;
+
+        /* typography */
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    .container--nav-links{
+        /* positioning, layout */
+        display: flex;
+        align-items: center;
+        padding: 2em 10%;
+        background-color: #181433;
+        background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+
+        /* typography */
+        list-style: none;
+    }
+
+    .nav-link{
+        /* positioning, layout */
+        margin: 0 2em 0 0;
+    }
+
+    .img--header{
+        z-index: -10;
+        position: absolute;
+        height: 1000px;
+        top: 0;
+        filter: brightness(0.8);
+    }
+
+
+    .container--header-img{
+        height: 100vh;
+        justify-content: center;
+        background-position-y: bottom;
+    }
+
+
+    .header-img--caption{
+        margin-top: -4em;
+        font-size: 5em;
+    }
+    
+    .header-img--sub-caption{
+        font-size: 2em;
+    }
+
+
 }

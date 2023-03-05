@@ -1,0 +1,43 @@
+.container--some-features{
+    margin-top: 4em;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: #181433;
+    color: #fff;
+}
+
+.container--some-features div{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--some-features i{
+    font-size: 2em;
+    color: #c5bea7;
+}
+
+.container--some-features h3{
+    margin: 1em;
+    font-size: 1.5em;
+    font-family: 'EB Garamond', serif;
+    font-weight: 200;
+}
+
+@media  screen and (min-width: 1024px) {
+    .container--some-features{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+   .container--some-features div{
+        margin: 2em 3em;
+   }
+}

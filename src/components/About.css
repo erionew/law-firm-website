@@ -1,0 +1,71 @@
+.container--about{
+    width: 70%;
+    margin: auto;
+}
+.container--about > div{
+    display: flex;
+    flex-direction: column;
+}
+.container--about > div >h2{
+    margin: 3em auto 2em auto;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.p--has-dropcap:first-letter{
+    font-family: 'EB Garamond', serif;
+    float: left;
+    font-size: 6rem;
+    line-height: 0.65;
+    margin: 0.1em 0.15em 0.2em 0;   
+}
+
+
+
+.container--image-row > .image--container{
+    margin: 2em 0;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    filter: brightness(0.8);
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px){
+    div.container--image-row{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.container--image-row >.image--container{
+        width: 30%;
+    }
+}
+
+@media  screen and (min-width: 1024px){
+    .container--about{
+        max-width: 1200px;
+    }
+    .container--about > div:first-of-type{
+        margin: 5em 0 0 0;
+        flex-direction: row-reverse;
+    }
+
+    .container--about p{
+        width: 60%;
+
+    }
+
+    div.container--image-row{
+        width: 60%;
+   
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.container--image-row >.image--container{
+        width: 30%;
+        height: 500px;
+    }
+
+}

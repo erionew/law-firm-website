@@ -1,5 +1,11 @@
+.container--header{
+    position: relative;
+    overflow: scroll;
+}
+
 .container--desktop-menu{
     /* positioning, layout*/
+    position: relative;
     display: none;
 }
 
@@ -11,8 +17,9 @@
 
 .mobile--nav-bar{
     /* positioning, layout*/
-    position: absolute;
-    z-index: 100;
+    position: sticky;
+    top: 0;
+    z-index: 200;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -26,13 +33,14 @@
 
 .mobile--nav-bar > h1{
     /* typography */
-    font-size: 1.75rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 400;
 }
 
 .mobile--nav-links{
     /* postioning, layout */
+    z-index: 100;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -80,22 +88,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-    background: url('../pics/lawyers.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url('../pics/header.jpg') no-repeat;
     filter: brightness(0.8);
+    background-size: 200%;
+    background-position: center;
+
     color: #fff;
+    text-shadow: rgb(43, 43, 43) 1px 0 10px;
 }
 
 .header-img--caption{
-    
     font-family: 'EB Garamond', serif;
+    font-size: 3em;
+    font-weight: 200;
 }
 
 .header-img--sub-caption{
-    font-size: 0.75em;
+    font-size: 1em;
 }
 
 
@@ -104,10 +113,6 @@
 
 @media  screen and (min-width: 768px) and (max-width: 1023px){
 
-    .container--header{
-        height: 100vh;;
-    }
-
     .container--mobile-menu{
         /* positioning, layout */
         display: none;
@@ -119,15 +124,14 @@
         width: 100%;
 
         /* typography */
-        background-color: #181433;
+        background-color: #16151e;
     }
-
     .container--desktop-menu > div{
         /* positioning, layout */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2em 4em;
+        padding: 1em 4em;
 
         /* typography */
         color: #fff;
@@ -139,9 +143,8 @@
         /* positioning, layout */
         display: flex;
         align-items: center;
-        padding: 2em;
-        background-color: #181433;
-        background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+        padding: 1.2em 2em;
+        background-color: #17161f;
 
         /* typography */
         list-style: none;
@@ -149,32 +152,25 @@
 
     .nav-link{
         /* positioning, layout */
-        margin: 0 1em;
+        margin: 0 2.5em;
+
+        font-size: 0.75em;
     }
     
-    .img--header{
-        z-index: -10;
-        margin-top: -1em;
-        filter: brightness(0.8);
-    }
-
     .header-img--caption{
-        font-size: 3em;
+        font-size: 5em;
     }
     
     .header-img--sub-caption{
-        font-size: 1em;
+        font-size: 1.5em;
     }
     
 }
 
 @media  screen and (min-width: 1024px){
-
     .container--header{
-        max-height: 100vh;
-        overflow: hidden;
+        height: 100vh;
     }
-
     .container--mobile-menu{
         /* positioning, layout */
         display: none;
@@ -186,15 +182,14 @@
         width: 100%;
 
         /* typography */
-        background-color: #181433;
+        background-color: #16151e;
     }
-
     .container--desktop-menu > div{
         /* positioning, layout */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2em 10%;
+        padding: 1em 4em;
 
         /* typography */
         color: #fff;
@@ -206,43 +201,30 @@
         /* positioning, layout */
         display: flex;
         align-items: center;
-        padding: 2em 10%;
-        background-color: #181433;
-        background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+        padding: 1.2em 2em;
+        background-color: #17161f;
 
         /* typography */
         list-style: none;
     }
-
     .nav-link{
         /* positioning, layout */
-        margin: 0 2em 0 0;
-    }
+        margin: 0 1.5em;
 
-    .img--header{
-        z-index: -10;
-        position: absolute;
-        height: 1000px;
-        top: 0;
-        filter: brightness(0.8);
+        font-size: 1em;
     }
-
 
     .container--header-img{
-        height: 100vh;
-        justify-content: center;
-        background-position-y: bottom;
+        height: 85vh;
+        background-size: 150%;
     }
 
-
     .header-img--caption{
-        margin-top: -4em;
-        font-size: 5em;
+        font-size: 6em;
     }
     
     .header-img--sub-caption{
-        font-size: 2em;
+        font-size: 1.5em;
     }
-
-
+    
 }

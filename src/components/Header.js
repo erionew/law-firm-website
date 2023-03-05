@@ -1,9 +1,6 @@
 import React from 'react'
 import './Header.css'
 import balanceIcon from '../pics/balance.png'
-import lawyers from '../pics/lawyers.jpg'
-
-
 
 export default function Header({ aboutPath, testimonialsPath, expertisePath, contactPath }) {
 
@@ -42,6 +39,7 @@ export default function Header({ aboutPath, testimonialsPath, expertisePath, con
       <div className='container--header-img'>
         <h2 className='header-img--caption'>Justice Oriented.</h2>
         <p className='header-img--sub-caption'>We're here to help you.</p>
+        <button className='button--white'>Free Evaluation<img src={balanceIcon}></img></button>
       </div>
     </div>
   )

@@ -5,12 +5,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    
+    color: #3b3b3b;
 }
 
 /* Typography */
 
+p{
+    margin-bottom: 1.5em;
+    line-height: 2;
+}
+
 h1{
+    font-family: 'EB Garamond', serif;
+}
+
+h2{
     font-family: 'EB Garamond', serif;
 }
 
@@ -28,6 +37,7 @@ h1{
     text-transform: uppercase;
     font-size: 0.75em;
     letter-spacing: 2px;
+    border: none;
 
     cursor: pointer;
 }

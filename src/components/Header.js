@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import '../stylesheets/Header.css'
 import balanceIcon from '../pics/balance.png'
 
 export default function Header({ aboutPath, testimonialsPath, expertisePath, contactPath }) {

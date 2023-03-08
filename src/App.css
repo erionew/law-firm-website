@@ -1,29 +1,40 @@
 *{
+    /* resetting */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* typography */
     font-family: 'Montserrat', sans-serif;
 }
 body{
+    background-color: #f2f2f2;
+    /* typography */
     color: #3b3b3b;
 }
 
-/* Typography */
 
 p{
+    /* positioning */
     margin-bottom: 1.5em;
     line-height: 2;
 }
 
 h1{
+    /* typography */
     font-family: 'EB Garamond', serif;
+    font-weight: 200;
 }
 
 h2{
+    /* typography */
+    font-size: 2em;
     font-family: 'EB Garamond', serif;
+    font-weight: 200;
 }
 
 .text--gold{
+    /* typography */
     color: #957b26;
 }
 
@@ -43,7 +54,24 @@ h2{
 }
 
 .button--white > img{
+    /* positioning */
     width: 15px;
     margin-left: 1em;
     filter: brightness(0.7);
 }
+
+.button--gold{
+    /* positioning */
+    padding: 1.5em 2em;
+
+    /* typography */
+    color: #f2f2f2;
+    background-color: #957b26;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    border: none;
+
+    cursor: pointer;
+}
+

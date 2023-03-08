@@ -1,32 +1,41 @@
 .container--about{
+    /* positioning, layout */
     width: 70%;
     margin: auto;
 }
 .container--about > div{
+    /* positioning, layout */
     display: flex;
     flex-direction: column;
 }
 .container--about > div >h2{
+    /* positioning, layout */
     margin: 3em auto 2em auto;
-    font-size: 2em;
+
+    /* typography */
     font-weight: 200;
     text-align: center;
 }
 
 .p--has-dropcap:first-letter{
-    font-family: 'EB Garamond', serif;
+    /* positioning, layout */
+    margin: 0.1em 0.15em 0.2em 0;   
     float: left;
+
+    /* typography */
+    font-family: 'EB Garamond', serif;
     font-size: 6rem;
     line-height: 0.65;
-    margin: 0.1em 0.15em 0.2em 0;   
 }
 
 
 
 .container--image-row > .image--container{
-    margin: 2em 0;
+    /* positioning, layout */
+    margin: 2em auto;
     height: 400px;
     width: 100%;
+    max-width: 275px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -35,35 +44,41 @@
 
 @media  screen and (min-width: 768px) and (max-width: 1023px){
     div.container--image-row{
+        /* positioning, layout */
         flex-direction: row;
         justify-content: space-between;
     }
     div.container--image-row >.image--container{
+        /* positioning, layout */
         width: 30%;
     }
 }
 
 @media  screen and (min-width: 1024px){
     .container--about{
+        /* positioning, layout */
         max-width: 1200px;
     }
     .container--about > div:first-of-type{
+        /* positioning, layout */
         margin: 5em 0 0 0;
         flex-direction: row-reverse;
     }
 
     .container--about p{
+        /* positioning, layout */
         width: 60%;
 
     }
 
     div.container--image-row{
+        /* positioning, layout */
         width: 60%;
-   
         flex-direction: row;
         justify-content: space-between;
     }
     div.container--image-row >.image--container{
+        /* positioning, layout */
         width: 30%;
         height: 500px;
     }

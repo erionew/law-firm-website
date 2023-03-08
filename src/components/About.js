@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import '../stylesheets/About.css'
 import buildingImg from '../pics/building.jpg'
 import meetingImg from '../pics/meeting.jpg'
 import signingImg from '../pics/signing.jpg'

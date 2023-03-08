@@ -1,10 +1,11 @@
 .container--header{
     position: relative;
-    overflow: scroll;
+    
 }
 
 .container--desktop-menu{
     /* positioning, layout*/
+
     position: relative;
     display: none;
 }
@@ -12,14 +13,14 @@
 .container--mobile-menu{
     height: 100%;
     position: relative;
-    
+
 }
 
 .mobile--nav-bar{
     /* positioning, layout*/
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 200;
+    z-index: 300;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -33,14 +34,14 @@
 
 .mobile--nav-bar > h1{
     /* typography */
-    font-size: 1rem;
+    font-size: 1.75rem;
     letter-spacing: 2px;
     font-weight: 400;
 }
 
 .mobile--nav-links{
     /* postioning, layout */
-    z-index: 100;
+    z-index: 200;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -89,7 +90,6 @@
     justify-content: center;
     align-items: center;
     background: url('../pics/header.jpg') no-repeat;
-    filter: brightness(0.8);
     background-size: 200%;
     background-position: center;
 
@@ -101,6 +101,7 @@
     font-family: 'EB Garamond', serif;
     font-size: 3em;
     font-weight: 200;
+    margin: 0.25em;
 }
 
 .header-img--sub-caption{
@@ -190,6 +191,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1em 4em;
+        width: 100%;
 
         /* typography */
         color: #fff;
@@ -211,19 +213,23 @@
         /* positioning, layout */
         margin: 0 1.5em;
 
+        /* typography */
         font-size: 1em;
     }
 
     .container--header-img{
+        /* positioning, layout */
         height: 85vh;
         background-size: 150%;
     }
 
     .header-img--caption{
+        /* typography */
         font-size: 6em;
     }
     
     .header-img--sub-caption{
+        /* typography */
         font-size: 1.5em;
     }
     

@@ -1,5 +1,5 @@
 import React from 'react'
-import './SomeFeatures.css'
+import '../stylesheets/Features.css'
 
 export default function SomeFeatures() {
   return (

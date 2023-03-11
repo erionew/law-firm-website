@@ -1,9 +1,9 @@
 import React from 'react'
 import '../stylesheets/Features.css'
 
-export default function SomeFeatures() {
+export default function Features() {
   return (
-    <div className='container--some-features'>
+    <div id="features" className='container--some-features'>
       <div>
         <i class="fa-solid fa-house"></i>
         <h3>Real Estate</h3>

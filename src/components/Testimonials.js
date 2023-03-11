@@ -7,7 +7,7 @@ import theresaImg from '../pics/theresa.jpg'
 
 export default function Testimonials() {
   return (
-    <>
+    <div id="testimonials">
     <h2>What Our Clients Say</h2>
     <div className='container--testimonials'>
       <div className='container--testimonials__img'>
@@ -42,6 +42,6 @@ export default function Testimonials() {
         </div>
       </div>
     </div>
-    </>
+    </div>
   )
 }

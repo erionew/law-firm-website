@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Header aboutPath='#' testimonialsPath='#' expertisePath='#' contactPath='#' />
+      <Header aboutPath='#about' testimonialsPath='#testimonials' expertisePath='#features' contactPath='#contact' />
       <About />
       <Features />
       <Testimonials />

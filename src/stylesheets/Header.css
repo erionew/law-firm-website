@@ -32,6 +32,10 @@
     color: #fff;
 }
 
+.mobile-menu__icon{
+    cursor: pointer;
+}
+
 .mobile--nav-bar > h1{
     /* typography */
     font-size: 1.75rem;
@@ -77,6 +81,7 @@
 
 .mobile--nav-links > .button--white{
     margin-top: 5em;
+    cursor: pointer;
 }
 
 .active{

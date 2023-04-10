@@ -22,7 +22,7 @@ export default function Header({ aboutPath, testimonialsPath, expertisePath, con
       <div className='container--mobile-menu'>
         <div className='mobile--nav-bar'>
             <h1>Justice Law Firm<span className='text--gold'>.</span></h1>
-            <i className="fa-solid fa-bars" onClick={() => {
+            <i className="fa-solid fa-bars mobile-menu__icon" onClick={() => {
               document.querySelector('.mobile--nav-links').classList.toggle('active')
             }
             }></i>

@@ -5,7 +5,7 @@ import balanceIcon from '../pics/balance.png'
 export default function Header({ aboutPath, testimonialsPath, expertisePath, contactPath }) {
 
   return (
-    <div className='container--header'>
+    <header className='container--header'>
       <div className='container--desktop-menu'>
         <div>
             <h1>Justice Law Firm<span className='text--gold'>.</span></h1>
@@ -41,6 +41,6 @@ export default function Header({ aboutPath, testimonialsPath, expertisePath, con
         <p className='header-img--sub-caption'>We're here to help you.</p>
         <button className='button--white'>Free Evaluation<img src={balanceIcon}></img></button>
       </div>
-    </div>
+    </header>
   )
 }

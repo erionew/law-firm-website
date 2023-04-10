@@ -3,7 +3,7 @@ import '../stylesheets/Features.css'
 
 export default function Features() {
   return (
-    <div id="features" className='container--some-features'>
+    <section id="features" className='container--some-features'>
       <div>
         <i class="fa-solid fa-house"></i>
         <h3>Real Estate</h3>
@@ -21,6 +21,6 @@ export default function Features() {
         <h3>Personal Jurisdiction</h3>
         <p>Duis efficitur pellentesque ante, vel.</p>
       </div>
-    </div>
+    </section>
   )
 }

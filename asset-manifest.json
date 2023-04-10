@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/law-firm-website/static/css/main.5314af64.css",
+    "main.js": "/law-firm-website/static/js/main.7b0051a0.js",
+    "static/media/building.jpg": "/law-firm-website/static/media/building.c4a5d77ada627bd282dc.jpg",
+    "static/media/testimonials.jpg": "/law-firm-website/static/media/testimonials.2ed125162e731f6c70b7.jpg",
+    "static/media/signing.jpg": "/law-firm-website/static/media/signing.14cfa05ef6c660d11f93.jpg",
+    "static/media/header.jpg": "/law-firm-website/static/media/header.e8b7e823e0dd0ba40319.jpg",
+    "static/media/meeting.jpg": "/law-firm-website/static/media/meeting.56322028ae230c418d4f.jpg",
+    "static/media/theresa.jpg": "/law-firm-website/static/media/theresa.e1b4acb5379226ddfde3.jpg",
+    "static/media/anthony.jpg": "/law-firm-website/static/media/anthony.902deb7a043f0ddf2144.jpg",
+    "static/media/gabriella.jpg": "/law-firm-website/static/media/gabriella.4ec5303b688cd63b9961.jpg",
+    "static/media/balance.png": "/law-firm-website/static/media/balance.62b73f0c9b903629a6c2.png",
+    "index.html": "/law-firm-website/index.html",
+    "main.5314af64.css.map": "/law-firm-website/static/css/main.5314af64.css.map",
+    "main.7b0051a0.js.map": "/law-firm-website/static/js/main.7b0051a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5314af64.css",
+    "static/js/main.7b0051a0.js"
+  ]
+}
